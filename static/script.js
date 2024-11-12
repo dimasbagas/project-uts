@@ -34,3 +34,13 @@ function addTask() {
     });
   }
 }
+
+function deleteTask(taskId, element) {
+  fetch('/tasks/' + taskId, {
+    method: 'DELETE'
+  })
+  .then(response => response.json())
+  .then(data => {
+    element.remove();
+  });
+}
