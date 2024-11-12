@@ -60,6 +60,14 @@ li {
   border-radius: 5px;
   display: flex;
   justify-content: sapce-between;
-  align-items
+  align-items: center;
   padding-left: 10px;
+}
+.delete-btn {
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
 }
