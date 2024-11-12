@@ -44,3 +44,10 @@ function deleteTask(taskId, element) {
     element.remove();
   });
 }
+
+function addTaskToDOM(task) {
+  const taskList = document.getElementById('taskList');
+  const Li = document.createElement('Li');
+  Li.innerHTML = `${task.task} $[task.time] <button class="delete-btn" onclick="deleteTask(${task.id}),this.parentElement)">Delete</button>`;
+  taskList.appendChild(li);
+}
