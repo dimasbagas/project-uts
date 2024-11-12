@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function fetchTasks() {
   fetch('/tasks')
-  .then(response => response.json())
-  .then(data => {
-    const taskList = document.getElementById
-    tasklist.innerHTML = "";
-    data.forEach ( task => {
-      addTaskToDOM(task);
+    .then(response => response.json())
+    .then(data => {
+      const taskList = document.getElementById
+      tasklist.innerHTML = "";
+      data.forEach ( task => {
+        addTaskToDOM(task);
+      });
     });
-  });
 }
 
 function addTask() {
