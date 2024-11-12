@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-  feetchTasks();
+  fetchTasks();
 });
 
 function fetchTasks() {
   fetch('/tasks')
     .then(response => response.json())
     .then(data => {
-      const taskList = document.getElementById
-      tasklist.innerHTML = "";
-      data.forEach ( task => {
+      const taskList = document.getElementById('taskList');
+      taskList.innerHTML = "";
+      data.forEach(task => {
         addTaskToDOM(task);
       });
     });
@@ -16,15 +16,15 @@ function fetchTasks() {
 
 function addTask() {
   const taskInput = document.getElementById('taskInput');
-  const timeInput = document.getElementById('timeIput')
-  const taskText = taskInput.ariaValueMax.trim();
-  const taskTime = timeInput.ariaValueMax;
+  const timeInput = document.getElementById('timeInput');
+  const taskText = taskInput.value.trim();
+  const taskTime = timeInput.value;
 
-  if (taskText !== "" && timeInput !== "") {
+  if (taskText !== "" && taskTime !== "") {
     fetch('/tasks', {
       method: 'POST',
-      headers: { 'Coontent-Type': 'aplication/json' },
-      body: JSON.stringify({ task: taskText, Time:timeText })
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ task: taskText, time: taskTime })
     })
     .then(response => response.json())
     .then(data => {
@@ -47,7 +47,7 @@ function deleteTask(taskId, element) {
 
 function addTaskToDOM(task) {
   const taskList = document.getElementById('taskList');
-  const Li = document.createElement('Li');
-  Li.innerHTML = `${task.task} $[task.time] <button class="delete-btn" onclick="deleteTask(${task.id}),this.parentElement)">Delete</button>`;
+  const li = document.createElement('li');
+  li.innerHTML = `${task.task} ${task.time} <button class="delete-btn" onclick="deleteTask(${task.id}, this.parentElement)">Delete</button>`;
   taskList.appendChild(li);
 }
