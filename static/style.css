@@ -120,6 +120,99 @@ button {
   transform: translateX(-100px);
   }
 }
+.strowberi {
+  width: 70px;
+  animation: animation1 15s linear infinite alternate;
+}
+.strowberi-1 {
+  position: absolute;
+  width: 70px;
+  top: 5%;
+  left: 17%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+.strowberi-2 {
+  position: absolute;
+  width: 100px;
+  width: 70px;
+  top: 24%;
+  left: 25%;
+  rotate: 10deg;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.strowberi-3 {
+  position: absolute;
+  width: 100px;
+  width: 70px;
+  top: 60%;
+  left: 25%;
+  rotate: -10deg;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.strowberi-4 {
+  position: absolute;
+  width: 100px;
+  width: 70px;
+  top: 55%;
+  left: 8%;
+  rotate: 45deg;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.strowberi-5 {
+  position: absolute;
+  width: 70px;
+  top: 3%;
+  right: 10%;
+  rotate: -10deg;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.strowberi-6 {
+  position: absolute;
+  width: 100px;
+  width: 70px;
+  top: 20%;
+  right: 20%;
+  rotate: -15deg;
+  transform: translateX(-50%);
+  z-index: 1;
+  animation: animation1 20s linear infinite alternate;
+  -webkit-animation: animation1 20s linear infinite alternate;
+}
+.strowberi-7 {
+  position: absolute;
+  width: 100px;
+  width: 70px;
+  top: 40%;
+  right: 25%;
+  rotate: -10deg;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.strowberi-8 {
+  position: absolute;
+  width: 100px;
+  width: 70px;
+  top: 60%;
+  right: 14%;
+  rotate: 45deg;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.strowberi-9 {
+  position: absolute;
+  width: 100px;
+  width: 70px;
+  top: 10%;
+  left: 55%;
+  rotate: 10deg;
+  transform: translateX(-50%);
+  z-index: 1;
+}
 ul {
   list-style: none;
   padding: 0px;
