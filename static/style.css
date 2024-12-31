@@ -213,6 +213,17 @@ button {
   transform: translateX(-50%);
   z-index: 1;
 }
+@keyframes animation1 {
+  0%,100% {
+    transform: translateY(0);
+  }
+  10%,30%,50%,70% {
+    transform: translateY(-80px);
+}
+  20%,40%,60% {
+    transform: translateY(8px);
+}
+}
 ul {
   list-style: none;
   padding: 0px;
