@@ -1,22 +1,24 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url('images/gambar-1.jfif');
-  background-size: cover;
+  background-color: #eea0b7;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
+  color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  overflow: hidden;
 }
 .container {
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow:  10px 10px 20px #ff448c,-10px -10px 20px #ffffff;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
+  border: 2px solid black;
   width: 300px;
+  position: relative;
+  z-index: 10;
 }
 h1 {
   text-align: center;
@@ -53,6 +55,63 @@ button {
   color: rgb(255, 255, 255);
   cursor: pointer;
   height: 40px;
+}
+.awan_1 {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 70%;
+  transform: translateX(-50%);
+  animation: customAni 5s ease-in-out 0s infinite ALTERNATE none;
+}.awan_2 {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 70%;
+  transform: translateX(-50%);
+  animation: customAni 5s ease-in-out 0s infinite ALTERNATE none;
+}.awan_3 {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 70%;
+  transform: translateX(-50%);
+  animation: customAni 5s ease-in-out 0s infinite ALTERNATE none;
+}.awan_4 {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 70%;
+  transform: translateX(-50%);
+  animation: customAni 5s ease-in-out 0s infinite ALTERNATE none;
+}.awan_5 {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 70%;
+  transform: translateX(-50%);
+  animation: customAni 5s ease-in-out 0s infinite ALTERNATE none;
+}.awan_6 {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 70%;
+  transform: translateX(-50%);
+  animation: customAni 5s ease-in-out 0s infinite ALTERNATE none;
+}.awan_7 {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 70%;
+  transform: translateX(-50%);
+  animation: customAni 5s ease-in-out 0s infinite ALTERNATE none;
+}.awan_8 {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 70%;
+  transform: translateX(-50%);
+  animation: customAni 5s ease-in-out 0s infinite ALTERNATE none;
 }
 ul {
   list-style: none;
