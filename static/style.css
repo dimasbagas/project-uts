@@ -113,6 +113,13 @@ button {
   transform: translateX(-50%);
   animation: customAni 5s ease-in-out 0s infinite ALTERNATE none;
 }
+@keyframes customAni {
+  0% {
+    transform: translateX(0);
+} 100% {
+  transform: translateX(-100px);
+  }
+}
 ul {
   list-style: none;
   padding: 0px;
